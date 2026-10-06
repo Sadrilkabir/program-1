@@ -2,7 +2,9 @@ console.log("Welcome to the Age Checker!");
 
 let age = prompt("Enter your age:");
 
-if (age < 0) {
+if (age === null || age === "") {
+    console.log("You did not enter an age.");
+} else if (age < 0) {
     console.log("Invalid age. Please enter a valid age.");
 } else if (age < 13) {
     console.log("You are a child.");
